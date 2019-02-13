@@ -1,0 +1,74 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ #main {
+  text-align: center;
+ }
+
+ #content {
+  border: 2px solid black; /* ボーダー */
+  border-radius: 10px; /* 角丸 */
+  width: 400px; /* 横幅 */
+  margin: 0 auto; /* 真ん中寄せ */
+ }
+
+ #yomi {
+  top: 40px;
+  position: relative;
+ }
+
+ #mondai {
+  display: flex;
+  justify-content: center; /* 子要素をflexboxにより中央に配置する */
+  font-size: 2.4rem;
+ }
+
+ .text {
+  padding: 2px;
+ }
+
+ .text.default {
+  color: #f3f3f3;
+  text-shadow: 1px 1px 0 #000,
+             -1px 1px 0 #000,
+             1px -1px 0 #000,
+             -1px -1px 0 #000;
+ }
+
+ .text.correct {
+  color: black;
+  text-shadow: none; /* ボーダーを無かったことにする */
+ }
+
+ #start-button {
+    font-size: 1.0em;
+    font-weight: bold;
+    padding: 10px 30px;
+    background-color: #248;
+    color: #fff;
+    border-style: none;
+    cursor: pointer;
+}
+
+#finish-panel {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
